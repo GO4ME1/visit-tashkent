@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #cce5ff);
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+    background: #0056b3;
+    color: #fff;
+}
+.about, .attractions, .contact {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: #fff;
+}
