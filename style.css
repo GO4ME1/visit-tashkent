@@ -2,41 +2,55 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f0f4f8, #cce5ff);
-    color: #333;
-    line-height: 1.6;
+    background-color: #f0f0f0;
 }
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px 0;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 h1 {
     margin: 0;
-}
-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
+    font-size: 3em;
 }
 .hero {
-    padding: 50px 20px;
-    text-align: center;
-    background: #0056b3;
-    color: #fff;
+    background-image: url('https://images.pexels.com/photos/8828455/pexels-photo-8828455.jpeg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    position: relative;
 }
-.about, .attractions, .contact {
+.hero h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.content {
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff;
+}
+.attractions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.attraction {
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
 }
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 20px;
-    background: #007bff;
-    color: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

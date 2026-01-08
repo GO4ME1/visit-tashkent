@@ -10,78 +10,88 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f0f4f8, #cce5ff);
-            color: #333;
-            line-height: 1.6;
+            background-color: #f0f0f0;
         }
         header {
-            background: #007bff;
-            color: #fff;
-            padding: 20px 0;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 20px;
             text-align: center;
         }
         h1 {
             margin: 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
+            font-size: 3em;
         }
         .hero {
-            padding: 50px 20px;
-            text-align: center;
-            background: #0056b3;
-            color: #fff;
+            background-image: url('https://images.pexels.com/photos/8828455/pexels-photo-8828455.jpeg');
+            height: 400px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            position: relative;
         }
-        .about, .attractions, .contact {
+        .hero h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .content {
             padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background: #fff;
+        }
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction {
+            background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
         }
         footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 20px;
-            background: #007bff;
-            color: #fff;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Explore Tashkent</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#attractions">Attractions</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="hero">
+            <h2>Your Gateway to Central Asia</h2>
+        </div>
     </header>
-    <section class="hero">
-        <h2>Welcome to the Heart of Uzbekistan!</h2>
-        <p>Discover the rich history, vibrant culture, and stunning architecture of Tashkent.</p>
-    </section>
-    <section class="about" id="about">
-        <h3>About Tashkent</h3>
-        <p>Tashkent, the capital of Uzbekistan, is a city where ancient traditions meet modern life. With its rich history and diverse culture, Tashkent offers something for everyone.</p>
-    </section>
-    <section class="attractions" id="attractions">
-        <h3>Top Attractions</h3>
-        <ul>
-            <li>Khast Imam Complex</li>
-            <li>Chorsu Bazaar</li>
-            <li>Tashkent Metro</li>
-            <li>Amir Timur Museum</li>
-            <li>Independence Square</li>
-        </ul>
-    </section>
-    <section class="contact" id="contact">
-        <h3>Contact Us</h3>
-        <p>If you have any questions or need more information, feel free to reach out!</p>
-        <p>Email: info@visittashkent.com</p>
-    </section>
+    <div class="content">
+        <h2>Top Attractions</h2>
+        <div class="attractions">
+            <div class="attraction">
+                <h3>Khast Imam Complex</h3>
+                <p>Discover the heart of Islamic culture and history.</p>
+            </div>
+            <div class="attraction">
+                <h3>Chorsu Bazaar</h3>
+                <p>Experience the vibrant local market filled with spices and crafts.</p>
+            </div>
+            <div class="attraction">
+                <h3>Tashkent Metro</h3>
+                <p>Admire the stunning architecture of the metro stations.</p>
+            </div>
+            <div class="attraction">
+                <h3>Amir Timur Museum</h3>
+                <p>Learn about the legendary conqueror and his empire.</p>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2023 Visit Tashkent. All Rights Reserved.</p>
     </footer>
